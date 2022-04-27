@@ -110,8 +110,7 @@ let visualizeNetwork iter (network: (float * float)[]) =
     |> Chart.savePNG(
         $"out/output_iter_{iter}",
         Width=800,
-        Height=500
-    )
+        Height=500)
 
 let writeOut (network: (float * float)[]) filePath =
     let text =
@@ -163,11 +162,9 @@ let main filePath =
                 newNetwork, newLearningRate, newPopSize
         ) (network, learningRate, float popSize)
 
-
     // Visualize and write out final map.
     visualizeNetwork iters finalNetwork
     writeOut finalNetwork "out/output.csv"
-
     Ok "Success"
 
 let Cli =

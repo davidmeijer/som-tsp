@@ -3,9 +3,10 @@
 ---
 
 ### Description
-Small console app for creating using self-organising maps to get sub-optimal solution for the traveling salesman problem.
+Small console app for using self-organising maps to calculate a sub-optimal solution for the traveling salesman problem for a given set of coordinates.
 
 ### Example
+Create a sub-optimal shortest route for visiting all places in The Netherlands:
 ```bash
 ./run_program.sh ./data/nl.csv
 ```
